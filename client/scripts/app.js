@@ -64,7 +64,7 @@ var MovieView = Backbone.View.extend({
 
   initialize: function() {
     // your code here
-    this.render();
+    this.model.on('change', this.render, this);
 
   },
 
